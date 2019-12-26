@@ -1,0 +1,277 @@
+    @import '../../sass/variables';
+    @import '../../sass/mixins';
+    .template {
+        box-sizing: border-box;
+        background-color: $c-black;
+        min-height: 1000px;
+        position: relative;
+        .menu {
+            z-index: 10;
+            .item {
+                button {
+                    margin-bottom: 20px;
+                    text-align: center;
+                    width: 50px;
+                    height: 50px;
+                    i {
+                        width: 40px;
+                        height: 40px;
+                        transform: translateX(-2px);
+                    }
+                    outline: none;
+                    font-size: 28px;
+                    color: $c-light-grey;
+                    background-color: transparent;
+                    border: none;
+                    border-radius: 100%;
+                    transition: all 0.2s;
+                    // transform: scale(1.35);
+                    // i {
+                    //     padding: 4px;
+                    // }
+                }
+                button:hover {
+                    transform: scale(1.35);
+                    color: $c-primary;
+                    border: 1px solid $c-primary;
+                }
+                .active {
+                    transform: scale(1.35);
+                    color: $c-primary;
+                    // border: 1px solid $c-primary;
+                    border-radius: 100%;
+                }
+            }
+        }
+        .wrapper {
+            height: 500px;
+            padding: 20px;
+            color: white;
+            position: absolute;
+            left: 35%;
+            top: 10%;
+            transform: translateX(-100%);
+            // height: 60%;
+            // width: 45%;
+            // max-width: 1000px;
+            width: 400px;
+            margin: auto;
+            // background-color: $c-semi-dark;
+            background-color: #1c1e1f;
+            transition: all .5s;
+            .content {
+                margin: auto;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        .avatar {
+            margin-left: 70px;
+            z-index: 11;
+            background-color: $c-semi-dark;
+            min-height: 600px;
+            position: absolute;
+            top: -50px;
+            // left: 10%;
+            width: 350px;
+            // width: 40%;
+        }
+    }
+    
+    .wrapper2 {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 500px;
+        color: white;
+        position: absolute;
+        left: 35%;
+        top: 10%;
+        width: 5px;
+        margin-left: 40px;
+        background-color: #1c1e1f;
+        transition: all .5s;
+        .content-1 {
+            padding: 20px 40px;
+            i {
+                margin-right: 20px;
+                font-size: 24px;
+                color: $c-primary;
+            }
+            .title {
+                font-size: 26px;
+                font-weight: 900;
+            }
+            .education {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            .year {
+                font-size: 12px;
+                font-weight: 800;
+                color: $c-primary;
+                margin-top: 30px;
+                margin-bottom: 5px;
+                text-transform: uppercase;
+            }
+            .school {
+                font-size: 20px;
+                font-weight: 900;
+                margin-bottom: 5px;
+            }
+            .school-adress {
+                color: $c-grey;
+                opacity: 0.5;
+                font-size: 13px;
+                line-height: 1.85;
+                margin-bottom: 5px;
+            }
+            .school-detail {
+                line-height: 1.6;
+                font-size: 15px;
+                color: $c-grey;
+                font-weight: 400;
+            }
+            .school-img {
+                margin-top: 30px;
+                // margin-left: 20px;
+                width: 300x;
+                // height: 200px;
+            }
+            .vnpro {
+                margin-top: 80px;
+            }
+            .ptit-detail {
+                margin-top: 60px;
+            }
+            .right {
+                justify-self: center;
+                img {
+                    margin-top: 10px;
+                    width: 300x;
+                    height: 200px;
+                }
+                .ptit {
+                    margin-top: 40px;
+                }
+            }
+            .project {
+                margin-top: 10px;
+                .underline {
+                    margin-top: 10px;
+                    display: block;
+                    height: 1px;
+                    background-color: $c-semi-grey;
+                }
+                .gird {
+                    display: grid;
+                    grid-template-columns: 350px 350px;
+                    grid-column-gap: 20px;
+                }
+                p {
+                    margin-top: 20px;
+                }
+                a {
+                    color: $c-primary;
+                }
+                a:hover {
+                    color: #0fffb0;
+                }
+                .video {
+                    iframe {
+                        margin-top: 25px;
+                        // margin-left: 100px;
+                    }
+                }
+            }
+            .contact {
+                span {
+                    font-weight: 500;
+                }
+                .underline {
+                    margin-top: 10px;
+                    display: block;
+                    height: 1px;
+                    background-color: $c-semi-grey;
+                }
+                .contact-content {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-column-gap: 50px;
+                    margin-top: 20px;
+                }
+                a {
+                    color: $c-primary;
+                }
+                a:hover {
+                    color: #0fffb0;
+                }
+                i {
+                    margin-top: 20px;
+                }
+            }
+            .experience {
+                margin-top: 10px;
+                .underline {
+                    margin-top: 10px;
+                    display: block;
+                    height: 1px;
+                    background-color: $c-semi-grey;
+                }
+                .gird {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-column-gap: 20px;
+                }
+                img {
+                    margin-left: 40px;
+                    margin-top: 35px;
+                    width: 300px;
+                }
+            }
+            .profile {
+                margin-top: 10px;
+                span.title {
+                    font-size: 70px;
+                    color: white;
+                }
+                .years {
+                    font-style: italic;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    span.path {
+                        color: $c-semi-grey;
+                        font-size: 20px;
+                        font-weight: 1500;
+                    }
+                    span {
+                        font-size: 18px;
+                        color: $c-primary;
+                        margin-right: 10px;
+                        font-weight: 500;
+                    }
+                }
+                .underline {
+                    margin-top: 40px;
+                    margin-bottom: 40px;
+                    display: block;
+                    height: 1px;
+                    background-color: $c-semi-grey;
+                }
+                .gird {
+                    .progress {
+                        height: 3px;
+                        background-color: #555555;
+                    }
+                    .progress-bar {
+                        height: 3px;
+                        background-color: $c-primary;
+                    }
+                }
+            }
+        }
+    }
+    
+    .show {
+        width: 800px;
+    }

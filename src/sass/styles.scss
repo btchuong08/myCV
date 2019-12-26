@@ -1,0 +1,49 @@
+@import './variables';
+@import './mixins';
+
+/* You can add global styles to this file, and also import other style files */
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: black;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #2d2d2d;
+    border-radius: 10px;
+    height: 30px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: black;
+}

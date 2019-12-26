@@ -1,0 +1,257 @@
+<router-outlet>
+
+
+
+    <div class="template  ">
+
+        <div class="wrapper menu">
+            <div class="content">
+                <div class="item">
+                    <button [ngClass]="{active: item === 'profile'}" (click)='getItem("profile")'>
+                        <i class="fa fa-user-o " aria-hidden="true"></i>
+                    </button>
+
+                </div>
+
+                <div class="item">
+                    <button [ngClass]="{active: item === 'contact'}" (click)='getItem("contact")'>
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </button>
+
+                </div>
+
+
+                <div class="item">
+                    <button [ngClass]="{active: item === 'workShop'}" (click)='getItem("workShop")'>
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    </button>
+
+                </div>
+
+                <div class="item">
+                    <button [ngClass]="{active: item === 'project'}" (click)='getItem("project")'>
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    </button>
+
+                </div>
+
+                <div class="item">
+                    <button [ngClass]="{active: item === 'educaiton'}" (click)='getItem("educaiton")'>
+                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                    </button>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="avatar"></div>
+        </div>
+
+
+
+        <div class="wrapper2 content" [ngClass]="{show: show}">
+            <div class="content-1">
+
+                <div *ngIf="item === 'profile' && !clear ">
+
+
+                    <div class="profile">
+
+                        <span class="title">about me</span>
+
+                        <div class="years">
+                            <span>25 years</span>
+                            <span class="path">/</span>
+                            <span>HCM City</span>
+                            <span class="path">/</span>
+                            <span>Front End Developer</span>
+
+
+                        </div>
+
+                        <div>
+                            <p class="school-detail"> The primary function of Quality Assurance/Quality Control Engineers is to ensure the quality of their company's products by participating in each stage of a product's creation, beginning with development and ending with packaging.
+                            </p>
+                        </div>
+
+
+                        <div class="underline"> </div>
+
+
+                        <div class="skill">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>Skills</span>
+                        </div>
+
+                        <div class="gird">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                    <span class="sr-only">70% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <div *ngIf="item === 'contact' && !clear" class="contact">
+
+
+
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span class="title">Contact</span>
+
+                    <div class="underline"> </div>
+                    <div class="contact-content">
+                        <div>
+                            <div>
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <span>0974-183-562</span>
+                            </div>
+                            <div>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <span>290 No Trang Long, Binh Thanh, HCM City</span>
+
+                            </div>
+
+                            <div>
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                <span>thechuong0806@gmail.com</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                                <a href="facebook.com/thechuong.bui">facebook.com/thechuong.bui</a>
+                            </div>
+
+                            <div>
+                                <i class="fa fa-skype" aria-hidden="true"></i>
+                                <span>btchuong</span>
+                            </div>
+
+                            <div>
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <span>btchuong</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+                <div *ngIf="item === 'workShop' && !clear" class="experience">
+
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    <span class="title">Work Experience</span>
+
+                    <div class="underline"> </div>
+                    <div class="gird">
+
+                        <div>
+
+                            <p class="year">
+                                December 2017 - December 2019
+                            </p>
+
+                            <p class="school">TMA Solution</p>
+
+                            <p class="school-adress">Ho Chi Minh City</p>
+                            <p class="school-detail">QC Engineer</p>
+                            <p class="school-detail"> The primary function of Quality Assurance/Quality Control Engineers is to ensure the quality of their company's products by participating in each stage of a product's creation, beginning with development and ending with packaging.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="assets\img\tma.jpg" alt="">
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div *ngIf="item === 'project' && !clear" class="project">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    <span class="title">My Project</span>
+
+                    <div class="underline"> </div>
+
+                    <div class="gird">
+
+
+
+                        <div>
+                            <p class="detail">A web page for booking movie ticket, using angular framework</p>
+                            <div>
+                                <span>Link: </span>
+                                <a href="https://fir-datvephim.firebaseapp.com/">https://fir-datvephim.firebaseapp.com/</a>
+                                <p class="school-detail"> The primary function of Quality Assurance/Quality Control Engineers is to ensure the quality of their company's products by participating in each stage of a product's creation, beginning with development and ending with
+                                    packaging.
+                                </p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="video">
+                            <iframe width="350" height="300" src="https://www.youtube.com/embed/KKc_RMln5UY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div *ngIf="item === 'educaiton' && !clear" class="education">
+
+                    <div>
+                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                        <span class="title">Education</span>
+
+                        <p class="year">
+                            March 2019 - December 2019
+                        </p>
+
+                        <p class="school">Cybersoft Academy</p>
+
+                        <p class="school-adress">Ho Chi Minh City</p>
+                        <p class="school-detail">Front End Developer, make single page website by html, css, bootstrap, angular with fully responsive </p>
+
+                        <img src="assets\img\vnpro2.jpg" alt="" class="school-img">
+
+                        <p class="year ptit-detail">
+                            March 2019 - December 2019
+                        </p>
+
+                        <p class="school">Posts and Telecommunications Institute of Technology</p>
+
+                        <p class="school-adress">Ho Chi Minh City</p>
+                        <p class="school-detail">Telecommunication engineer, GPA 2.7/4</p>
+
+                    </div>
+
+                    <div class="right">
+                        <img src="assets\img\cybersoft.jpg" alt="">
+                        <p class="year  vnpro">
+                            August 2012 - December 2017
+                        </p>
+
+                        <p class="school">VnPro Academy</p>
+
+                        <p class="school-adress">Ho Chi Minh City</p>
+                        <p class="school-detail">Network engineer with CCNA certificate </p>
+
+
+
+                        <img src="assets\img\ptit.jpeg" alt="" class="ptit">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</router-outlet>
