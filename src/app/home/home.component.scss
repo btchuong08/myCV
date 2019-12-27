@@ -478,21 +478,19 @@
     
     //   ---------------------------------------------------- transition----------------------------  
     .show {
-<<<<<<< HEAD
         width: 780px;
-=======
-        width: 800px;
     }
-    
+
     .hide {
         transform: translateX(-110%);
         opacity: 0;
     }
-    
+
     .fade {
+        transition: opacity 1.5s ease-in-out;
+        // transform: all 3s;
         // transition: opacity 2s ease-in-out;
         transition: all 1s;
         transform: translateX(0);
         opacity: 1;
->>>>>>> d6a677a9927cb6985a66f49109ec279dbd370313
-    }
+    } 
