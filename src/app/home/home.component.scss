@@ -296,6 +296,7 @@
                     grid-template-columns: 1fr 1fr;
                     grid-column-gap: 50px;
                     margin-top: 20px;
+                    margin-bottom: 20px;
                 }
                 a {
                     color: $c-primary;
@@ -305,6 +306,13 @@
                 }
                 i {
                     margin-top: 20px;
+                }
+                .map {
+                    margin-top: 40px;
+                    margin-left: 50px;
+                    width: 660px;
+                    height: 450px;
+                    margin-bottom: 20px;
                 }
             }
             .experience {
@@ -468,6 +476,23 @@
         }
     }
     
+    //   ---------------------------------------------------- transition----------------------------  
     .show {
+<<<<<<< HEAD
         width: 780px;
+=======
+        width: 800px;
+    }
+    
+    .hide {
+        transform: translateX(-110%);
+        opacity: 0;
+    }
+    
+    .fade {
+        // transition: opacity 2s ease-in-out;
+        transition: all 1s;
+        transform: translateX(0);
+        opacity: 1;
+>>>>>>> d6a677a9927cb6985a66f49109ec279dbd370313
     }
