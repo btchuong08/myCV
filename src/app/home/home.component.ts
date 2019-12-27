@@ -10,7 +10,7 @@ export class HomeComponent implements OnInit {
 
   
   name: boolean = true;
-  hide: boolean = true;
+
   age: boolean = false;
   show: boolean = true;
   fade: boolean = true;
@@ -32,10 +32,7 @@ export class HomeComponent implements OnInit {
       this.clear = false
     }, 800);
 
-    setTimeout(() => {
-      this.hide = true;
-    
-    }, 850);
+   
     setTimeout(() => {
       this.fade = true;
     

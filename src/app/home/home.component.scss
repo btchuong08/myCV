@@ -199,6 +199,7 @@
                     grid-template-columns: 1fr 1fr;
                     grid-column-gap: 50px;
                     margin-top: 20px;
+                    margin-bottom: 20px;
                 }
                 a {
                     color: $c-primary;
@@ -208,6 +209,13 @@
                 }
                 i {
                     margin-top: 20px;
+                }
+                .map {
+                    margin-top: 40px;
+                    margin-left: 50px;
+                    width: 660px;
+                    height: 450px;
+                    margin-bottom: 20px;
                 }
             }
             .experience {
