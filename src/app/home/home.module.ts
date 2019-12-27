@@ -18,7 +18,9 @@ library.add(fas, far);
     CommonModule,
     HomeRoutingModule,
     AngularFontAwesomeModule,
-    NgxPageScrollCoreModule
+    NgxPageScrollCoreModule,
+    
+    
    
    
   ],

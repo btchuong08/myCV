@@ -8,37 +8,37 @@
             <div class="content">
                 <div class="item">
                     <button [ngClass]="{active: item === 'profile'}" (click)='getItem("profile")'>
-                        <i class="fa fa-user-o " aria-hidden="true"></i>
-                    </button>
+                                <i class="fa fa-user-o " aria-hidden="true"></i>
+                            </button>
 
                 </div>
 
                 <div class="item">
                     <button [ngClass]="{active: item === 'contact'}" (click)='getItem("contact")'>
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                    </button>
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                            </button>
 
                 </div>
 
 
                 <div class="item">
                     <button [ngClass]="{active: item === 'workShop'}" (click)='getItem("workShop")'>
-                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                    </button>
+                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                            </button>
 
                 </div>
 
                 <div class="item">
                     <button [ngClass]="{active: item === 'project'}" (click)='getItem("project")'>
-                        <i class="fa fa-briefcase" aria-hidden="true"></i>
-                    </button>
+                                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                            </button>
 
                 </div>
 
                 <div class="item">
                     <button [ngClass]="{active: item === 'educaiton'}" (click)='getItem("educaiton")'>
-                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                    </button>
+                                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                            </button>
 
                 </div>
 
@@ -51,13 +51,13 @@
 
 
 
-        <div class="wrapper2 content" [ngClass]="{show: show}">
+        <div class="wrapper2 content " [ngClass]="{show: show}">
             <div class="content-1 ">
 
                 <div *ngIf="item === 'profile' && !clear ">
 
 
-                    <div class="profile hide  " [ngClass]="{fade: fade}">
+                    <div class="profile  hide" [ngClass]="{fade: fade}">
 
                         <span class="title">about me</span>
 
@@ -92,6 +92,7 @@
                                 </div>
                             </div>
                         </div>
+
 
 
 

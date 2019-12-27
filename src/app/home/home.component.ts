@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -9,7 +10,7 @@ export class HomeComponent implements OnInit {
 
   
   name: boolean = true;
- 
+  hide: boolean = true;
   age: boolean = false;
   show: boolean = true;
   fade: boolean = true;
@@ -32,6 +33,10 @@ export class HomeComponent implements OnInit {
     }, 800);
 
     setTimeout(() => {
+      this.hide = true;
+    
+    }, 850);
+    setTimeout(() => {
       this.fade = true;
     
     }, 900);
@@ -39,9 +44,11 @@ export class HomeComponent implements OnInit {
 
 
 
-  constructor() { }
+  constructor( ) { }
 
-  ngOnInit() {
+  ngOnInit(
+ 
+  ) {
    
     
   }

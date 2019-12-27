@@ -7,7 +7,7 @@ import { HomeModule } from './home/home.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
-import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
+
 
 
 @NgModule({
@@ -21,7 +21,6 @@ import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
     BrowserAnimationsModule,
     AngularFontAwesomeModule,
     MDBBootstrapModule.forRoot(),
-    NgxPageScrollCoreModule.forRoot({duration: 2500})
     
     
   ],

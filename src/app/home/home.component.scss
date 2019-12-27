@@ -272,16 +272,19 @@
         }
     }
     
+    //   ---------------------------------------------------- transition----------------------------  
     .show {
         width: 800px;
     }
     
     .hide {
+        transform: translateX(-110%);
         opacity: 0;
     }
     
     .fade {
-        transition: opacity 1.5s ease-in-out;
-        // transform: all 3s;
+        // transition: opacity 2s ease-in-out;
+        transition: all 1s;
+        transform: translateX(0);
         opacity: 1;
     }
