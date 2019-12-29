@@ -21,8 +21,10 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     BrowserAnimationsModule,
     AngularFontAwesomeModule,
     MDBBootstrapModule.forRoot(),
-    
-    
+
+
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

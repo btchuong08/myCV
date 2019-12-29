@@ -10,6 +10,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 
+
 library.add(fas, far);
 
 @NgModule({
@@ -19,10 +20,12 @@ library.add(fas, far);
     HomeRoutingModule,
     AngularFontAwesomeModule,
     NgxPageScrollCoreModule,
-    
-    
-   
-   
+
+
+
+
+
+
   ],
   exports: [HomeComponent]
 })

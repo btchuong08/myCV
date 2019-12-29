@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-
+import Scrollbar from 'smooth-scrollbar';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  
+  counterStart: number = 10;
   name: boolean = true;
 
   age: boolean = false;
@@ -20,8 +20,8 @@ export class HomeComponent implements OnInit {
     this.clear = true;
     this.show = false;
     this.item = data;
-    this.fade=false;
-   
+    this.fade = false;
+
 
     setTimeout(() => {
       this.show = true;
@@ -32,22 +32,21 @@ export class HomeComponent implements OnInit {
       this.clear = false
     }, 800);
 
-   
+
     setTimeout(() => {
       this.fade = true;
-    
+
     }, 900);
   }
 
 
 
-  constructor( ) { }
+  constructor() { }
 
-  ngOnInit(
- 
-  ) {
-   
-    
+  ngOnInit() {
+
+    Scrollbar.init(document.querySelector('#my-scrollbar'));
+
   }
 
 }
