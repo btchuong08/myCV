@@ -72,7 +72,7 @@
             }
         }
         .wrapper {
-            height: 400px;
+            height: 500px;
             padding: 20px;
             color: white;
             position: fixed;
@@ -98,7 +98,7 @@
             margin-left: 70px;
             z-index: 11;
             background-color: $c-semi-dark;
-            min-height: 500px;
+            min-height: 600px;
             position: fixed;
             top: -50px;
             // left: 10%;
@@ -187,7 +187,7 @@
     .wrapper2 {
         overflow-y: scroll;
         overflow-x: hidden;
-        height: 400px;
+        height: 500px;
         color: white;
         position: fixed;
         left: 35%;
@@ -236,6 +236,7 @@
                 font-size: 15px;
                 color: $c-grey;
                 font-weight: 400;
+                text-align: justify;
             }
             .school-img {
                 margin-top: 30px;
@@ -274,6 +275,7 @@
                     grid-column-gap: 20px;
                 }
                 p {
+                    text-align: justify;
                     margin-top: 20px;
                 }
                 a {
@@ -355,6 +357,10 @@
                     background-color: $c-semi-grey;
                 }
                 .gird {
+                    text-align: justify;
+                    .intern {
+                        transform: translateY(-50px);
+                    }
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     grid-column-gap: 20px;
@@ -395,10 +401,10 @@
                     height: 1px;
                     background-color: $c-semi-grey;
                 }
-                .underline-Skill {
-                    margin-top: 20px;
-                    margin-bottom: 20px;
-                }
+                // .underline-Skill {
+                //     margin-top: 20px;
+                //     margin-bottom: 20px;
+                // }
                 .gird {
                     .progress {
                         height: 3px;
@@ -409,8 +415,54 @@
                         background-color: $c-primary;
                     }
                 }
+                .gird2 {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-column-gap: 20px;
+                    grid-row-gap: 20px;
+                    .gird-content {
+                        position: relative;
+                        margin-top: 20px;
+                        background: linear-gradient(to right, #cf8bf3, #fdb99b);
+                        height: 200px;
+                        display: block;
+                        .gird-hover {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 90%;
+                            height: 85%;
+                            background-color: black;
+                            opacity: 0;
+                            transition: all 1s;
+                            .item {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                        }
+                    }
+                    .gird-content:hover {
+                        .gird-hover {
+                            opacity: 0.2;
+                        }
+                    }
+                }
                 .skill {
                     // margin-bottom: 20px;
+                    i {
+                        font-size: 30px;
+                        margin-right: 20px;
+                    }
+                    span {
+                        font-size: 36px;
+                        font-weight: 900;
+                    }
+                }
+                .myphoto {
+                    margin-bottom: 20px;
                     i {
                         font-size: 30px;
                         margin-right: 20px;
