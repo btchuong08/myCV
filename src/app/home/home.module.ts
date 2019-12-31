@@ -10,7 +10,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { LoadingComponent } from './loading/loading.component';
-
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 library.add(fas, far);
 
@@ -21,6 +21,7 @@ library.add(fas, far);
     HomeRoutingModule,
     AngularFontAwesomeModule,
     NgxPageScrollCoreModule,
+    MatTooltipModule
 
 
 
