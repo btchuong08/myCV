@@ -10,7 +10,7 @@ export class HomeComponent implements OnInit {
 
   counterStart: number = 10;
   name: boolean = true;
-
+  loading: boolean = true;
   age: boolean = false;
   show: boolean = true;
   fade: boolean = true;
@@ -46,6 +46,9 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
 
     Scrollbar.init(document.querySelector('#my-scrollbar'));
+    setTimeout(() => {
+      this.loading=false
+    }, 3000);
 
   }
 

@@ -1,649 +1,628 @@
 <router-outlet>
 
-    <div class="template  ">
+    <div class="all">
+        <div class="template " [ngClass]="{loading: !loading}">
 
-        <div class="bar">
-            <button [ngClass]="{active: item === 'profile'}" (click)='getItem("profile")'>
-                <i class="fa fa-user-o " aria-hidden="true"></i> About me
-            </button>
-
-
-            <button [ngClass]="{active: item === 'contact'}" (click)='getItem("contact")'>
-                <i class="fa fa-phone" aria-hidden="true"></i>Contact
-            </button>
+            <div class="bar">
+                <button [ngClass]="{active: item === 'profile'}" (click)='getItem("profile")'>
+                    <i class="fa fa-user-o " aria-hidden="true"></i> About me
+                </button>
 
 
-            <button [ngClass]="{active: item === 'workShop'}" (click)='getItem("workShop")'>
-                <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Work Experience
-            </button>
-
-            <button [ngClass]="{active: item === 'project'}" (click)='getItem("project")'>
-                <i class="fa fa-briefcase" aria-hidden="true"></i> My Project
-            </button>
+                <button [ngClass]="{active: item === 'contact'}" (click)='getItem("contact")'>
+                    <i class="fa fa-phone" aria-hidden="true"></i>Contact
+                </button>
 
 
-            <button [ngClass]="{active: item === 'educaiton'}" (click)='getItem("educaiton")'>
-                <i class="fa fa-graduation-cap" aria-hidden="true"></i> Education
-            </button>
+                <button [ngClass]="{active: item === 'workShop'}" (click)='getItem("workShop")'>
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Work Experience
+                </button>
+
+                <button [ngClass]="{active: item === 'project'}" (click)='getItem("project")'>
+                    <i class="fa fa-briefcase" aria-hidden="true"></i> My Project
+                </button>
 
 
+                <button [ngClass]="{active: item === 'educaiton'}" (click)='getItem("educaiton")'>
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i> Education
+                </button>
 
-
-        </div>
-
-        <div class="wrapper menu">
-            <div class="content">
-                <div class="item">
-                    <button [ngClass]="{active: item === 'profile'}" (click)='getItem("profile")'>
-                        <i class="fa fa-user-o " aria-hidden="true"></i>
-                    </button>
-
-                </div>
-
-                <div class="item">
-                    <button [ngClass]="{active: item === 'contact'}" (click)='getItem("contact")'>
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                    </button>
-
-                </div>
-
-
-                <div class="item">
-                    <button [ngClass]="{active: item === 'workShop'}" (click)='getItem("workShop")'>
-                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                    </button>
-
-                </div>
-
-                <div class="item">
-                    <button [ngClass]="{active: item === 'project'}" (click)='getItem("project")'>
-                        <i class="fa fa-briefcase" aria-hidden="true"></i>
-                    </button>
-
-                </div>
-
-                <div class="item">
-                    <button [ngClass]="{active: item === 'educaiton'}" (click)='getItem("educaiton")'>
-                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                    </button>
-
-                </div>
 
 
 
             </div>
 
-            <div class="avatar">
+            <div class="wrapper menu">
+                <div class="content">
+                    <div class="item">
+                        <button [ngClass]="{active: item === 'profile'}" (click)='getItem("profile")'>
+                            <i class="fa fa-user-o " aria-hidden="true"></i>
+                        </button>
 
-                <div class="demo1" (click)='getItem("contact")'>
-                    <p class="demo">Front End Developer</p>
+                    </div>
+
+                    <div class="item">
+                        <button [ngClass]="{active: item === 'contact'}" (click)='getItem("contact")'>
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="item">
+                        <button [ngClass]="{active: item === 'workShop'}" (click)='getItem("workShop")'>
+                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="item">
+                        <button [ngClass]="{active: item === 'project'}" (click)='getItem("project")'>
+                            <i class="fa fa-briefcase" aria-hidden="true"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="item">
+                        <button [ngClass]="{active: item === 'educaiton'}" (click)='getItem("educaiton")'>
+                            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                        </button>
+
+                    </div>
+
+
+
                 </div>
 
-                <!-- <img src="assets\img\avatar.jpg" alt=""> -->
+                <div class="avatar">
 
-                <p class="name btn-2" (click)='getItem("profile")'>Chuong Bui</p>
 
-                <!-- <p class="web btn-1" (click)='getItem("profile")'>Front End Developer</p> -->
 
-                <div class="icon" (click)='getItem("contact")'>
+                    <div class="demo1" (click)='getItem("contact")'>
+                        <p class="demo">Front End Developer</p>
+                    </div>
 
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-google-plus-g"></i>
+                    <!-- <img src="assets\img\avatar.jpg" alt=""> -->
+
+                    <p class="name btn-2" (click)='getItem("profile")'>Chuong Bui</p>
+
+                    <!-- <p class="web btn-1" (click)='getItem("profile")'>Front End Developer</p> -->
+
+                    <div class="icon" (click)='getItem("contact")'>
+
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-google-plus-g"></i>
+
+                    </div>
+
+
 
                 </div>
-
-
-
             </div>
-        </div>
 
 
 
-        <div class="wrapper2 content " [ngClass]="{show: show}" id='my-scrollbar'>
-            <div class="content-1 ">
+            <div class="wrapper2 content " [ngClass]="{show: show}" id='my-scrollbar'>
+                <div class="content-1 ">
 
-                <div *ngIf="item === 'profile' && !clear ">
-
-
-                    <div class="profile  hide" [ngClass]="{fade: fade}">
-
-                        <span class="title">about me</span>
-
-                        <div class="years">
-                            <span>25 years</span>
-                            <span class="path">/</span>
-                            <span>HCM City</span>
-                            <span class="path">/</span>
-                            <span>Front End Developer</span>
+                    <div *ngIf="item === 'profile' && !clear ">
 
 
-                        </div>
+                        <div class="profile  hide" [ngClass]="{fade: fade}">
 
 
+                            <span class="title">about me</span>
 
-                        <div>
-                            <p class="school-detail">Hello! I'm Chuong Bui. After graduating from PTIT University with
-                                major is telecommunications then being a software tester for 2 years, I realized that I
-                                enjoy making everythings more beautiful. So I decided to take a front
-                                end course for 6 months in Cybersoft Academy, and now I'm confident of being a Front End
-                                developer
-                            </p>
-                        </div>
-
-
-                        <div class="underline underline-Skill"> </div>
+                            <div class="years">
+                                <span>25 years</span>
+                                <span class="path">/</span>
+                                <span>HCM City</span>
+                                <span class="path">/</span>
+                                <span>Front End Developer</span>
 
 
-
-
-                        <div class="skill">
-                            <i class="fas fa-tachometer-alt"></i>
-                            <span>Skills</span>
-                        </div>
-
-                        <div class="gird">
-
-                            <div>
-                                <div class="skill-content">
-                                    <div>
-                                        <span class="text-start">HTML</span>
-
-                                    </div>
-
-                                    <div class="progress html">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                                            aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                                            <span class="sr-only">70%</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-                                <div class="skill-content">
-                                    <div>
-                                        <span class="text-start">CSS</span>
-
-                                    </div>
-
-                                    <div class="progress css">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                                            aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                                            <span class="sr-only">70%</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="skill-content">
-                                    <div>
-                                        <span class="text-start">BOOTSTRAP</span>
-
-                                    </div>
-
-                                    <div class="progress bootstrap">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="60"
-                                            aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                                            <span class="sr-only">60%</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="skill-content">
-                                    <div>
-                                        <span class="text-start">JAVASCRIPT</span>
-
-                                    </div>
-
-                                    <div class="progress java">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="60"
-                                            aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                                            <span class="sr-only">60%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="skill-content">
-                                    <div>
-                                        <span class="text-start">ANGULAR</span>
-
-                                    </div>
-
-                                    <div class="progress angular">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="60"
-                                            aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                                            <span class="sr-only">60%</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="skill-content">
-                                    <div>
-                                        <span class="text-start">PHOTOSHOP</span>
-
-                                    </div>
-
-                                    <div class="progress photoshop">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                                            aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                                            <span class="sr-only">60%</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="skill-content">
-                                    <div>
-                                        <span class="text-start">TEAM WORK</span>
-
-                                    </div>
-
-                                    <div class="progress team-work">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="80"
-                                            aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                                            <span class="sr-only">80%</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="skill-content">
-                                    <div>
-                                        <span class="text-start">ENGLISH</span>
-
-                                    </div>
-
-                                    <div class="progress english">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="60"
-                                            aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                                            <span class="sr-only">60%</span>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
 
 
 
+                            <div>
+                                <p class="school-detail">Hello! I'm Chuong Bui. After graduating from PTIT University with major is telecommunications then being a software tester for 2 years, I realized that I enjoy making everythings more beautiful. So I decided to take a front
+                                    end course for 6 months in Cybersoft Academy, and now I'm confident of being a Front End developer
+                                </p>
+                            </div>
+
+
+                            <div class="underline underline-Skill"> </div>
 
 
 
 
+                            <div class="skill">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Skills</span>
+                            </div>
 
-                        </div>
+                            <div class="gird">
 
-                        <div class="underline"> </div>
-
-
-                        <div class="interests">
-                            <i class="fas fa-headphones"></i>
-                            <span class="int">Interests</span>
-
-
-
-                            <div class="interests-content">
                                 <div>
-                                    <div>
-                                        <i class="fab fa-youtube"></i>
-                                        <span>Movie</span>
+                                    <div class="skill-content">
+                                        <div>
+                                            <span class="text-start">HTML</span>
+
+                                        </div>
+
+                                        <div class="progress html">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                                <span class="sr-only">70%</span>
+                                            </div>
+                                        </div>
                                     </div>
 
 
-                                    <p class="school-detail"> A fan of supper hero movie, I enjoy all the movie come
-                                        from DC and Marvel studio. The appearance of superheroes with amazing cgi
-                                        effects makes me extremely excited. In real, superhero is not a man have super
-                                        power,
-                                        superhero can be a normal man if he does amazing thing
-                                    </p>
 
+                                    <div class="skill-content">
+                                        <div>
+                                            <span class="text-start">CSS</span>
+
+                                        </div>
+
+                                        <div class="progress css">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                                <span class="sr-only">70%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-content">
+                                        <div>
+                                            <span class="text-start">BOOTSTRAP</span>
+
+                                        </div>
+
+                                        <div class="progress bootstrap">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                                <span class="sr-only">60%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="skill-content">
+                                        <div>
+                                            <span class="text-start">JAVASCRIPT</span>
+
+                                        </div>
+
+                                        <div class="progress java">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                                <span class="sr-only">60%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="skill-content">
+                                        <div>
+                                            <span class="text-start">ANGULAR</span>
+
+                                        </div>
+
+                                        <div class="progress angular">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                                <span class="sr-only">60%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-content">
+                                        <div>
+                                            <span class="text-start">PHOTOSHOP</span>
+
+                                        </div>
+
+                                        <div class="progress photoshop">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                                <span class="sr-only">60%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-content">
+                                        <div>
+                                            <span class="text-start">TEAM WORK</span>
+
+                                        </div>
+
+                                        <div class="progress team-work">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                                <span class="sr-only">80%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="skill-content">
+                                        <div>
+                                            <span class="text-start">ENGLISH</span>
+
+                                        </div>
+
+                                        <div class="progress english">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                                <span class="sr-only">60%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+
+                            </div>
+
+                            <div class="underline"> </div>
+
+
+                            <div class="interests">
+                                <i class="fas fa-headphones"></i>
+                                <span class="int">Interests</span>
+
+
+
+                                <div class="interests-content">
                                     <div>
                                         <div>
-                                            <i class="fas fa-swimmer"></i>
-                                            <span>Swimming</span>
+                                            <i class="fab fa-youtube"></i>
+                                            <span>Movie</span>
                                         </div>
 
 
-                                        <p class="school-detail"> I don't like sports except swimming, which helps me
-                                            relax after a week of work. I used to go swimming at a pool near my house on
-                                            Saturday afternoon, then I go around Sai Gon and eat familiar foods, that's
-                                            a happy
-                                            thing. Sometimes, happiness is simple things.
-
+                                        <p class="school-detail"> A fan of supper hero movie, I enjoy all the movie come from DC and Marvel studio. The appearance of superheroes with amazing cgi effects makes me extremely excited. In real, superhero is not a man have super power,
+                                            superhero can be a normal man if he does amazing thing
                                         </p>
 
-                                    </div>
-                                </div>
-                                <div>
-                                    <div>
-                                        <i class="fas fa-headphones"></i>
-                                        <span>Music</span>
-                                    </div>
-
-
-                                    <p class="school-detail"> Now new research suggests that playing music or singing
-                                        together may be particularly potent in bringing about social closeness through
-                                        the release of endorphins. ... Music has also been linked to dopamine release,
-                                        involved
-                                        in regulating mood and craving behavior, which seems to predict music's ability
-                                        to bring us pleasure.
-                                    </p>
-
-                                    <div>
                                         <div>
-
-
                                             <div>
-                                                <i class="fas fa-route"></i>
-                                                <span>Travel</span>
+                                                <i class="fas fa-swimmer"></i>
+                                                <span>Swimming</span>
                                             </div>
 
 
-                                            <p class="school-detail"> From cutting down on stress, to lowering your
-                                                chances of developing a heart disease, the health benefits of traveling
-                                                are huge. You may stay sitting on a chair all day long at the workplace:
-                                                including some walking
-                                                to your trip is sure to make your body feel better.
+                                            <p class="school-detail"> I don't like sports except swimming, which helps me relax after a week of work. I used to go swimming at a pool near my house on Saturday afternoon, then I go around Sai Gon and eat familiar foods, that's a
+                                                happy thing. Sometimes, happiness is simple things.
+
                                             </p>
 
                                         </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <i class="fas fa-headphones"></i>
+                                            <span>Music</span>
+                                        </div>
 
 
+                                        <p class="school-detail"> Now new research suggests that playing music or singing together may be particularly potent in bringing about social closeness through the release of endorphins. ... Music has also been linked to dopamine release,
+                                            involved in regulating mood and craving behavior, which seems to predict music's ability to bring us pleasure.
+                                        </p>
+
+                                        <div>
+                                            <div>
+
+
+                                                <div>
+                                                    <i class="fas fa-route"></i>
+                                                    <span>Travel</span>
+                                                </div>
+
+
+                                                <p class="school-detail"> From cutting down on stress, to lowering your chances of developing a heart disease, the health benefits of traveling are huge. You may stay sitting on a chair all day long at the workplace: including some
+                                                    walking to your trip is sure to make your body feel better.
+                                                </p>
+
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="underline"> </div>
+
+                            <div class="myphoto">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>My Photo</span>
+                            </div>
+
+                            <div class="gird2">
+                                <div class="gird2-item">
+
+                                    <div class="gird-content">
+                                        <div class="gird-hover">
+
+                                        </div>
+                                        <img src="assets\img\myPhoto\pic1.jpg" alt="">
 
                                     </div>
+                                    <div class="gird-content">
+                                        <div class="gird-hover">
+
+                                        </div>
+                                        <img src="assets\img\myPhoto\pic10.jpg" alt="">
+
+                                    </div>
+                                    <div class="gird-content">
+                                        <div class="gird-hover">
+
+                                        </div>
+                                        <img src="assets\img\myPhoto\pic9.jpg" alt="">
+
+                                    </div>
+                                    <div class="gird-content">
+                                        <div class="gird-hover">
+
+                                        </div>
+                                        <img src="assets\img\myPhoto\pic4.jpg" alt="">
+
+                                    </div>
+                                    <div class="gird-content">
+                                        <div class="gird-hover">
+
+                                        </div>
+                                        <img src="assets\img\myPhoto\pic8.jpg" alt="">
+
+                                    </div>
+
+
+                                </div>
+                                <div class="gird2-item">
+                                    <div class=" gird-content">
+                                        <div class="gird-hover">
+
+                                        </div>
+                                        <img src="assets\img\myPhoto\pic6.jpg" alt="">
+
+                                    </div>
+                                    <div class="gird-content">
+                                        <div class="gird-hover">
+
+                                        </div>
+                                        <img src="assets\img\myPhoto\pic7.jpg" alt="">
+
+                                    </div>
+                                    <div class="gird-content">
+                                        <div class="gird-hover">
+
+                                        </div>
+                                        <img src="assets\img\myPhoto\pic5.jpg" alt="">
+
+                                    </div>
+                                    <div class="gird-content">
+                                        <div class="gird-hover">
+
+                                        </div>
+                                        <img src="assets\img\myPhoto\pic3.jpg" alt="">
+
+                                    </div>
+                                    <div class="gird-content">
+                                        <div class="gird-hover">
+
+                                        </div>
+                                        <img src="assets\img\myPhoto\pic2.jpg" alt="">
+
+                                    </div>
+
+
                                 </div>
 
 
                             </div>
+
                         </div>
+                    </div>
+                    <div *ngIf="item === 'contact' && !clear" class="contact hide" [ngClass]="{fade: fade}">
+
+
+
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <span class="title">Contact</span>
 
                         <div class="underline"> </div>
+                        <div class="contact-content">
 
-                        <div class="myphoto">
-                            <i class="fas fa-tachometer-alt"></i>
-                            <span>My Photo</span>
-                        </div>
-
-                        <div class="gird2">
-                            <div class="gird2-item">
-
-                                <div class="gird-content">
-                                    <div class="gird-hover">
-
-                                    </div>
-                                    <img src="assets\img\myPhoto\pic1.jpg" alt="">
-
+                            <div>
+                                <div>
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <span>0974-183-562</span>
                                 </div>
-                                <div class="gird-content">
-                                    <div class="gird-hover">
-
-                                    </div>
-                                    <img src="assets\img\myPhoto\pic10.jpg" alt="">
-
-                                </div>
-                                <div class="gird-content">
-                                    <div class="gird-hover">
-
-                                    </div>
-                                    <img src="assets\img\myPhoto\pic9.jpg" alt="">
-
-                                </div>
-                                <div class="gird-content">
-                                    <div class="gird-hover">
-
-                                    </div>
-                                    <img src="assets\img\myPhoto\pic4.jpg" alt="">
-
-                                </div>
-                                <div class="gird-content">
-                                    <div class="gird-hover">
-
-                                    </div>
-                                    <img src="assets\img\myPhoto\pic8.jpg" alt="">
+                                <div>
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <span>290 No Trang Long, Binh Thanh</span>
 
                                 </div>
 
-
+                                <div>
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                    <span>thechuong0806@gmail.com</span>
+                                </div>
                             </div>
-                            <div class="gird2-item">
-                                <div class=" gird-content">
-                                    <div class="gird-hover">
-
-                                    </div>
-                                    <img src="assets\img\myPhoto\pic6.jpg" alt="">
-
-                                </div>
-                                <div class="gird-content">
-                                    <div class="gird-hover">
-
-                                    </div>
-                                    <img src="assets\img\myPhoto\pic7.jpg" alt="">
-
-                                </div>
-                                <div class="gird-content">
-                                    <div class="gird-hover">
-
-                                    </div>
-                                    <img src="assets\img\myPhoto\pic5.jpg" alt="">
-
-                                </div>
-                                <div class="gird-content">
-                                    <div class="gird-hover">
-
-                                    </div>
-                                    <img src="assets\img\myPhoto\pic3.jpg" alt="">
-
-                                </div>
-                                <div class="gird-content">
-                                    <div class="gird-hover">
-
-                                    </div>
-                                    <img src="assets\img\myPhoto\pic2.jpg" alt="">
-
+                            <div>
+                                <div>
+                                    <i class="fab fa-facebook"></i>
+                                    <!-- <i class="fa fa-facebook-official" aria-hidden="true"></i> -->
+                                    <a href="facebook.com/thechuong.bui">facebook.com/thechuong.bui</a>
                                 </div>
 
+                                <div>
+                                    <i class="fa fa-skype" aria-hidden="true"></i>
+                                    <span>btchuong</span>
+                                </div>
 
+                                <div>
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    <span>btchuong</span>
+                                </div>
                             </div>
 
 
                         </div>
+                        <div class="underline"> </div>
 
-                    </div>
-                </div>
-                <div *ngIf="item === 'contact' && !clear" class="contact hide" [ngClass]="{fade: fade}">
-
-
-
-                    <i class="fa fa-phone" aria-hidden="true"></i>
-                    <span class="title">Contact</span>
-
-                    <div class="underline"> </div>
-                    <div class="contact-content">
-
-                        <div>
-                            <div>
-                                <i class="fa fa-phone" aria-hidden="true"></i>
-                                <span>0974-183-562</span>
-                            </div>
-                            <div>
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <span>290 No Trang Long, Binh Thanh</span>
-
-                            </div>
-
-                            <div>
-                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                <span>thechuong0806@gmail.com</span>
-                            </div>
+                        <div class="hire-me">
+                            <button (click)='getItem("contact")'>
+                                Hire me
+                            </button>
                         </div>
-                        <div>
-                            <div>
-                                <i class="fab fa-facebook"></i>
-                                <!-- <i class="fa fa-facebook-official" aria-hidden="true"></i> -->
-                                <a href="facebook.com/thechuong.bui">facebook.com/thechuong.bui</a>
-                            </div>
+                        <!-- <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.942794498738!2d106.69588151466867!3d10.815689861425582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528952ebae443%3A0x248b43e6ec57d162!2zMjkwIE7GoSBUcmFuZyBMb25nLCBQaMaw4budbmcgMTIsIELDrG5oIFRo4bqhbmgsIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1577440930529!5m2!1sen!2s"
+                                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div> -->
 
-                            <div>
-                                <i class="fa fa-skype" aria-hidden="true"></i>
-                                <span>btchuong</span>
-                            </div>
-
-                            <div>
-                                <i class="fa fa-instagram" aria-hidden="true"></i>
-                                <span>btchuong</span>
-                            </div>
-                        </div>
 
 
                     </div>
-                    <div class="underline"> </div>
+                    <div *ngIf="item === 'workShop' && !clear" class="experience hide" [ngClass]="{fade: fade}">
 
-                    <div class="hire-me">
-                        <button (click)='getItem("contact")'>
-                            Hire me
-                        </button>
-                    </div>
-                    <!-- <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.942794498738!2d106.69588151466867!3d10.815689861425582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528952ebae443%3A0x248b43e6ec57d162!2zMjkwIE7GoSBUcmFuZyBMb25nLCBQaMaw4budbmcgMTIsIELDrG5oIFRo4bqhbmgsIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1577440930529!5m2!1sen!2s"
-                            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                    </div> -->
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                        <span class="title">Work Experience</span>
 
+                        <div class="underline"> </div>
+                        <div class="gird">
 
-
-                </div>
-                <div *ngIf="item === 'workShop' && !clear" class="experience hide" [ngClass]="{fade: fade}">
-
-                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                    <span class="title">Work Experience</span>
-
-                    <div class="underline"> </div>
-                    <div class="gird">
-
-                        <div>
-
-                            <p class="year">
-                                December 2017 - December 2019
-                            </p>
-
-                            <p class="school">TMA Solution</p>
-
-                            <p class="school-adress">Ho Chi Minh City</p>
-                            <p class="school-detail">QC Engineer</p>
-                            <p class="school-detail"> Job description: make test plan, create test cases, config test
-                                inviroment, execute test cases, report test result, retest bug when bug is fixed
-
-                            </p>
-                        </div>
-
-
-                        <div>
-                            <img src="assets\img\tma.jpg" alt="">
-                        </div>
-
-                        <div class="intern">
-
-                            <p class="year">
-                                June 2017 - December 2017
-                            </p>
-
-                            <p class="school">TMA Solution</p>
-
-                            <p class="school-adress">Ho Chi Minh City</p>
-                            <p class="school-detail">Intern QC Engineer</p>
-
-                        </div>
-                    </div>
-
-
-
-                </div>
-                <div *ngIf="item === 'project' && !clear" class="project hide" [ngClass]="{fade: fade}">
-                    <i class="fa fa-briefcase" aria-hidden="true"></i>
-                    <span class="title">My Project</span>
-
-                    <div class="underline"> </div>
-
-                    <div class="gird">
-
-
-
-                        <div>
-                            <p class="detail">A web page for booking movie ticket, using angular framework</p>
                             <div>
-                                <span>Link: </span>
-                                <a
-                                    href="https://fir-datvephim.firebaseapp.com/">https://fir-datvephim.firebaseapp.com/</a>
-                                <p class="school-detail"> My graduation thesis from Cybesoft Academy written by angular.
-                                    Using html, scss, bootstrap and mterial ui. This is a demo web site that allows to
-                                    view movie information, create accounts and book movie tickets. In addition,
-                                    if you are an admin you can manage users and movie schedules by creating, editing
-                                    and deleting information
+
+                                <p class="year">
+                                    December 2017 - December 2019
+                                </p>
+
+                                <p class="school">TMA Solution</p>
+
+                                <p class="school-adress">Ho Chi Minh City</p>
+                                <p class="school-detail">QC Engineer</p>
+                                <p class="school-detail"> Job description: create test plan, create test cases, config test inviroment, execute test cases, report test result, retest bug when bug is fixed
 
                                 </p>
                             </div>
+
+
+                            <div>
+                                <img src="assets\img\tma.jpg" alt="">
+                            </div>
+
+                            <div class="intern">
+
+                                <p class="year">
+                                    June 2017 - December 2017
+                                </p>
+
+                                <p class="school">TMA Solution</p>
+
+                                <p class="school-adress">Ho Chi Minh City</p>
+                                <p class="school-detail">Intern QC Engineer</p>
+
+                            </div>
                         </div>
 
 
 
-                        <div class="video">
-                            <iframe width="300" height="250" src="https://www.youtube.com/embed/LCPEsiYvMw0"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                    </div>
+                    <div *ngIf="item === 'project' && !clear" class="project hide" [ngClass]="{fade: fade}">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                        <span class="title">My Project</span>
+
+                        <div class="underline"> </div>
+
+                        <div class="gird">
+
+
+
+                            <div>
+                                <p class="detail">A web page for booking movie ticket, using angular framework</p>
+                                <div>
+                                    <span>Link: </span>
+                                    <a href="https://fir-datvephim.firebaseapp.com/">https://fir-datvephim.firebaseapp.com/</a>
+                                    <p class="school-detail"> My graduation thesis from Cybesoft Academy written by angular. Using html, scss, bootstrap and mterial ui. This is a demo web site that allows to view movie information, create accounts and book movie tickets. In addition,
+                                        if you are an admin you can manage users and movie schedules by creating, editing and deleting information
+
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+                            <div class="video">
+
+                                <iframe src="https://drive.google.com/file/d/1FMRgoFKcvcRqZNb18vGM9YiGl3fV5VpB/preview" width="330" height="300" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <!-- <iframe width="330" height="300" src="https://www.youtube.com/embed/LCPEsiYvMw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                            </div>
                         </div>
-                    </div>
 
+
+                    </div>
+                    <div *ngIf="item === 'educaiton' && !clear" class="education hide" [ngClass]="{fade: fade}">
+
+                        <div>
+                            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                            <span class="title">Education</span>
+
+                            <p class="year">
+                                March 2019 - December 2019
+                            </p>
+
+                            <p class="school">Cybersoft Academy</p>
+
+                            <p class="school-adress">Ho Chi Minh City</p>
+                            <p class="school-detail">Front End Developer, make single page website by html, css, bootstrap, angular with fully responsive </p>
+
+                            <img src="assets\img\vnpro2.jpg" alt="" class="school-img">
+
+                            <p class="year ptit-detail">
+                                March 2019 - December 2019
+                            </p>
+
+                            <p class="school">Posts and Telecommunications Institute of Technology</p>
+
+                            <p class="school-adress">Ho Chi Minh City</p>
+                            <p class="school-detail">Telecommunication engineer, GPA 2.7/4</p>
+
+                        </div>
+
+                        <div class="right">
+                            <img src="assets\img\cybersoft.jpg" alt="">
+                            <p class="year  vnpro">
+                                August 2012 - December 2017
+                            </p>
+
+                            <p class="school">VnPro Academy</p>
+
+                            <p class="school-adress">Ho Chi Minh City</p>
+                            <p class="school-detail">Network engineer with CCNA certificate </p>
+
+
+
+                            <img src="assets\img\ptit.jpeg" alt="" class="ptit">
+                        </div>
+
+                    </div>
 
                 </div>
-                <div *ngIf="item === 'educaiton' && !clear" class="education hide" [ngClass]="{fade: fade}">
-
-                    <div>
-                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                        <span class="title">Education</span>
-
-                        <p class="year">
-                            March 2019 - December 2019
-                        </p>
-
-                        <p class="school">Cybersoft Academy</p>
-
-                        <p class="school-adress">Ho Chi Minh City</p>
-                        <p class="school-detail">Front End Developer, make single page website by html, css, bootstrap,
-                            angular with fully responsive </p>
-
-                        <img src="assets\img\vnpro2.jpg" alt="" class="school-img">
-
-                        <p class="year ptit-detail">
-                            March 2019 - December 2019
-                        </p>
-
-                        <p class="school">Posts and Telecommunications Institute of Technology</p>
-
-                        <p class="school-adress">Ho Chi Minh City</p>
-                        <p class="school-detail">Telecommunication engineer, GPA 2.7/4</p>
-
-                    </div>
-
-                    <div class="right">
-                        <img src="assets\img\cybersoft.jpg" alt="">
-                        <p class="year  vnpro">
-                            August 2012 - December 2017
-                        </p>
-
-                        <p class="school">VnPro Academy</p>
-
-                        <p class="school-adress">Ho Chi Minh City</p>
-                        <p class="school-detail">Network engineer with CCNA certificate </p>
-
-
-
-                        <img src="assets\img\ptit.jpeg" alt="" class="ptit">
-                    </div>
-
-                </div>
-
             </div>
         </div>
+        <app-loading *ngIf="loading"></app-loading>
     </div>
 
+
 </router-outlet>
+
+
+<!-- ------------------------------------ -->

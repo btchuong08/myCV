@@ -9,12 +9,13 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
+import { LoadingComponent } from './loading/loading.component';
 
 
 library.add(fas, far);
 
 @NgModule({
-  declarations: [HomeComponent, NavbarComponent],
+  declarations: [HomeComponent, NavbarComponent, LoadingComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
