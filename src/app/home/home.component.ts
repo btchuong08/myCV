@@ -47,7 +47,7 @@ export class HomeComponent implements OnInit {
 
     Scrollbar.init(document.querySelector('#my-scrollbar'));
     setTimeout(() => {
-      this.loading=false
+      this.loading = false
     }, 3000);
 
   }
