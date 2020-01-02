@@ -39,7 +39,9 @@ export class HomeComponent implements OnInit {
     }, 900);
   }
 
-
+  hireMe = () =>{
+    window.open('mailto:thechuong0806@gmail.com?subject=Hiring&body=Front End Developer ','email')
+  }
 
   constructor() { }
 
