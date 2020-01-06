@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import counterUp from 'counterup2'
 
 import Scrollbar from 'smooth-scrollbar';
 @Component({
@@ -39,19 +40,22 @@ export class HomeComponent implements OnInit {
     }, 900);
   }
 
-  hireMe = () =>{
-    window.open('mailto:thechuong0806@gmail.com?subject=Hiring&body=Front End Developer ','email')
+  hireMe = () => {
+    window.open('mailto:thechuong0806@gmail.com?subject=Hiring&body=Front End Developer ', 'email')
   }
 
   constructor() { }
 
   ngOnInit() {
 
+
     Scrollbar.init(document.querySelector('#my-scrollbar'));
     setTimeout(() => {
       this.loading = false
-    }, 3000);
+    }, 2100);
 
+
+    counterUp(document.querySelector('.counter'))
   }
 
 }
